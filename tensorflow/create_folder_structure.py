@@ -4,8 +4,8 @@ import shutil
 
 
 def main():
-    in_dir = "data/images/raw_images"
-    out_dir = "data/images/by_class"
+    in_dir = "dataset/images/raw_images"
+    out_dir = "dataset/images/by_class"
     class_name = re.compile("(.*)_\d{1,5}((.jpg)|(.jpeg)|(.png))")
     created_dirs = []
 

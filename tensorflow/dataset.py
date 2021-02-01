@@ -17,22 +17,6 @@ def get_loader(train_dir, dev_dir, batch_size, image_size):
         layers.experimental.preprocessing.Resizing(image_size, image_size)
     ])
 
-    # dataset = tf.keras.preprocessing.image_dataset_from_directory(
-    #     train_dir,
-    #     labels="inferred",
-    #     label_mode="int",
-    #     class_names=None,
-    #     color_mode="grayscale",
-    #     batch_size=batch_size,
-    #     image_size=(image_size, image_size),
-    #     shuffle=True,
-    #     seed=None,
-    #     validation_split=0.1,
-    #     subset=None,
-    #     interpolation="bilinear",
-    #     follow_links=False,
-    # )
-
     trn_dataset = keras.preprocessing.image_dataset_from_directory(
         train_dir,
         validation_split=0.2,

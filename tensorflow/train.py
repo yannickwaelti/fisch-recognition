@@ -17,7 +17,7 @@ IMG_SIZE = 224
 BATCH_SIZE = 32
 NUM_CLASSES = 484
 NUM_EPOCHS = 3
-DATA_DIR = "data/images/by_class"
+DATA_DIR = "dataset/images/by_class"
 MODEL_PATH = "efficientb0/"
 LOAD_MODEL = False
 
